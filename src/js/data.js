@@ -1,10 +1,4 @@
-﻿const now = Date.now();
-
-function ago(minutes) {
-  return new Date(now - minutes * 60 * 1000).toISOString();
-}
-
-export const DEMO_CAPTURES = [
+﻿export const DEMO_CAPTURES = [
   {
     id: 'demo-aurora',
     demo: true,
@@ -14,7 +8,7 @@ export const DEMO_CAPTURES = [
     width: 1600,
     height: 1000,
     bytes: 2482000,
-    createdAt: ago(9),
+    createdAt: '2026-10-18T09:24:00.000Z',
     source: 'window',
     kind: 'image',
     tags: ['dashboard', 'design', 'data'],
@@ -30,7 +24,7 @@ export const DEMO_CAPTURES = [
     width: 1600,
     height: 1000,
     bytes: 2098000,
-    createdAt: ago(27),
+    createdAt: '2026-10-17T16:05:00.000Z',
     source: 'browser',
     kind: 'image',
     tags: ['checkout', 'design', 'sensitive'],
@@ -46,7 +40,7 @@ export const DEMO_CAPTURES = [
     width: 1600,
     height: 2600,
     bytes: 3184000,
-    createdAt: ago(42),
+    createdAt: '2026-10-12T11:40:00.000Z',
     source: 'scrolling',
     kind: 'image',
     tags: ['travel', 'editorial', 'long capture'],
@@ -62,7 +56,7 @@ export const DEMO_CAPTURES = [
     width: 1600,
     height: 1000,
     bytes: 1976000,
-    createdAt: ago(188),
+    createdAt: '2026-10-08T20:15:00.000Z',
     source: 'window',
     kind: 'image',
     tags: ['code', 'typescript', 'ai'],
@@ -78,7 +72,7 @@ export const DEMO_CAPTURES = [
     width: 1600,
     height: 1000,
     bytes: 2847000,
-    createdAt: ago(1420),
+    createdAt: '2026-09-29T22:10:00.000Z',
     source: 'game',
     kind: 'image',
     tags: ['game', 'neon', 'fps'],
@@ -94,7 +88,7 @@ export const DEMO_CAPTURES = [
     width: 1600,
     height: 1000,
     bytes: 2319000,
-    createdAt: ago(2950),
+    createdAt: '2026-09-21T17:30:00.000Z',
     source: 'browser',
     kind: 'image',
     tags: ['web', 'design', 'luxury'],
