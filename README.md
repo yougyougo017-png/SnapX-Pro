@@ -24,6 +24,16 @@ Snipping Tool gets the rectangle. SnapX Pro gets the whole workflow: capture, an
 - **Share without friction** — clipboard, drag-and-drop, Discord webhooks, Imgur uploads, Google Drive handoff, and instant links.
 - **Make it yours** — 11 signature themes, 3 community themes, corner radius, density, motion, acrylic, and a floating capture toolbar.
 
+## Screenshots
+
+| Dashboard | Capture Studio |
+| --- | --- |
+| ![SnapX Pro dashboard](docs/screenshots/dashboard.webp) | ![SnapX Pro capture studio](docs/screenshots/capture-studio.webp) |
+| **Library** | **AI Studio** |
+| ![SnapX Pro library](docs/screenshots/library.webp) | ![SnapX Pro AI Studio](docs/screenshots/ai-studio.webp) |
+| **Editor** | **Themes** |
+| ![SnapX Pro editor](docs/screenshots/editor.webp) | ![SnapX Pro themes](docs/screenshots/themes.webp) |
+
 ## Capture modes
 
 | Mode | Shortcut | What it does |
@@ -178,7 +188,7 @@ src/
 
 ## CI builds
 
-`.github/workflows/build.yml` builds Windows installers on `windows-latest` and macOS DMGs/ZIPs on `macos-14` for every push, pull request, tag, or manual dispatch. Artifacts are uploaded to the workflow run.
+`.github/workflows/build.yml` builds Windows installers on `windows-latest` and macOS DMGs/ZIPs on `macos-latest` for every push, pull request, tag, or manual dispatch. Artifacts are uploaded to the workflow run, and pushing a `v*` tag publishes a GitHub Release with every installer attached.
 
 macOS builds are unsigned by default. For distribution, add an Apple Developer ID certificate and notarization secrets, then set `CSC_IDENTITY_AUTO_DISCOVERY` and `APPLE_ID`/`APPLE_APP_SPECIFIC_PASSWORD` in the workflow.
 

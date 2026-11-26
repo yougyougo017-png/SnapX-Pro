@@ -47,7 +47,7 @@ jobs:
   macos:
     name: macOS installers
     needs: check
-    runs-on: macos-14
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -66,3 +66,30 @@ jobs:
             release/*.zip
           if-no-files-found: error
           retention-days: 30
+
+  release:
+    name: Publish GitHub release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [windows, macos]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: snapx-pro-windows
+          path: release/windows
+      - uses: actions/download-artifact@v4
+        with:
+          name: snapx-pro-macos
+          path: release/macos
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            release/windows/*.exe \
+            release/macos/*.dmg \
+            release/macos/*.zip \
+            --title "SnapX Pro ${GITHUB_REF_NAME#v}" \
+            --generate-notes
