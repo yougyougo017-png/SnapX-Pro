@@ -821,6 +821,7 @@ kbd {
 }
 .toggle.on { background: color-mix(in srgb, var(--accent) 70%, transparent); border-color: color-mix(in srgb, var(--accent) 55%, transparent); box-shadow: 0 0 12px -2px var(--glow); }
 .toggle.on::after { transform: translateX(16px); background: #fff; }
+.toggle:disabled { opacity: .45; cursor: not-allowed; }
 .switch-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--stroke); }
 .switch-row:last-child { border-bottom: 0; padding-bottom: 0; }
 .switch-copy { min-width: 0; }

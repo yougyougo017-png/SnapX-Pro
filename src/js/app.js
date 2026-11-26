@@ -385,9 +385,8 @@ function updateUserShell() {
 function updateSyncShell() {
   const pill = $('#syncPill');
   if (!pill) return;
-  const cloud = Boolean(state.settings?.integrations?.cloudSync);
-  pill.innerHTML = `${icon(cloud ? 'cloudCheck' : 'lock', 13)}<span>${cloud ? 'Cloud sync on' : 'Local vault'}</span>`;
-  pill.title = cloud ? 'Cloud sync enabled' : 'All captures stay on this device';
+  pill.innerHTML = `${icon('lock', 13)}<span>Local vault</span>`;
+  pill.title = 'All captures stay on this device. Cloud sync is coming soon.';
 }
 
 function updateToolbarState() {

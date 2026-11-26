@@ -328,8 +328,8 @@ function sectionIntegrations(settings) {
           <span class="pill">${icon('sparkle', 10)} Coming soon</span>
         </div>
         <div class="switch-row">
-          <div class="switch-copy"><b>Sync library across devices</b><span>End-to-end encrypted. Local-first even when enabled.</span></div>
-          <button class="toggle ${settings.integrations?.cloudSync ? 'on' : ''}" data-setting-toggle="integrations.cloudSync" type="button" aria-label="Cloud sync"></button>
+          <div class="switch-copy"><b>Sync library across devices</b><span>End-to-end encrypted sync is planned. Everything stays local until it ships.</span></div>
+          <button class="toggle" disabled aria-disabled="true" title="Cloud sync is coming soon" aria-label="Cloud sync (coming soon)" type="button"></button>
         </div>
       </div>
     </section>

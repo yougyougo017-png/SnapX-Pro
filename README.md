@@ -196,6 +196,8 @@ macOS builds are unsigned by default. For distribution, add an Apple Developer I
 
 - True scrolling capture stitching
 - Direct Google Drive OAuth upload
+- Encrypted cloud sync across devices
+- Per-capture version history
 - Generative object removal
 - Plugin system and theme marketplace downloads
 - Screen ruler and game-capture profiles
