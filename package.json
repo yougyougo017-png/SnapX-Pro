@@ -12,7 +12,7 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "dist:win": "electron-builder --win nsis portable",
-    "dist:mac": "electron-builder --mac dmg zip",
+    "dist:mac": "electron-builder --mac dmg zip --x64 --arm64",
     "check": "node scripts/check-syntax.js",
     "icon": "node scripts/generate-icon.js"
   },
