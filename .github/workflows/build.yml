@@ -91,5 +91,6 @@ jobs:
             release/windows/*.exe \
             release/macos/*.dmg \
             release/macos/*.zip \
+            --repo "$GITHUB_REPOSITORY" \
             --title "SnapX Pro ${GITHUB_REF_NAME#v}" \
             --generate-notes
