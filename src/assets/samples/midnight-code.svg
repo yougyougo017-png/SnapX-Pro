@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070A11"/>
+      <stop offset="1" stop-color="#05070D"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFF0A0"/>
+      <stop offset=".5" stop-color="#FFD700"/>
+      <stop offset="1" stop-color="#C9961F"/>
+    </linearGradient>
+    <linearGradient id="aiPanel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0E1422"/>
+      <stop offset="1" stop-color="#080B13"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1370 250) rotate(120) scale(350 500)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD700" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000" flood-opacity=".5"/>
+    </filter>
+    <filter id="glowSmall" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".8" fill="#FFFFFF" fill-opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#dots)" opacity=".35"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="24" y="20" width="1552" height="960" rx="24" fill="#080B12" stroke="#FFFFFF" stroke-opacity=".09"/>
+  </g>
+
+  <!-- titlebar -->
+  <path d="M24 44a24 24 0 0 1 24-24h1504a24 24 0 0 1 24 24v32H24V44Z" fill="#0B0F18"/>
+  <circle cx="54" cy="47" r="5" fill="#FF6B7A"/>
+  <circle cx="72" cy="47" r="5" fill="#FFC24B"/>
+  <circle cx="90" cy="47" r="5" fill="#47D79F"/>
+  <text x="800" y="51" text-anchor="middle" fill="#6D778D" font-family="Segoe UI, sans-serif" font-size="10.5">midnight-code — SnapX Pro</text>
+  <g opacity=".6">
+    <path d="M1518 42h14M1525 35v14" stroke="#7E879A" stroke-width="1.2" stroke-linecap="round"/>
+    <rect x="1544" y="38" width="10" height="9" rx="2" stroke="#7E879A" stroke-width="1.2"/>
+  </g>
+
+  <!-- activity bar -->
+  <rect x="24" y="76" width="58" height="874" fill="#090D15"/>
+  <path d="M82 76v874" stroke="#FFFFFF" stroke-opacity=".06"/>
+  <g>
+    <rect x="40" y="98" width="26" height="26" rx="7" fill="url(#gold)" opacity=".95"/>
+    <path d="m47 116 6-12 6 12-6-4-6 4Z" fill="#171100"/>
+    <g fill="none" stroke="#7A8499" stroke-width="1.5">
+      <rect x="47" y="154" width="14" height="14" rx="3" stroke="#FFD700" stroke-opacity=".85"/>
+      <path d="M44 201h20M44 208h14" stroke-linecap="round"/>
+      <circle cx="54" cy="251" r="7"/>
+      <path d="M48 251h12M54 245v12" stroke-linecap="round"/>
+      <path d="M46 294h16M46 300h16M46 306h10" stroke-linecap="round"/>
+    </g>
+    <g fill="#5A6478">
+      <circle cx="54" cy="350" r="5" stroke="currentColor" stroke-width="1.4" fill="none"/>
+      <circle cx="54" cy="394" r="5" stroke="currentColor" stroke-width="1.4" fill="none"/>
+    </g>
+    <g opacity=".6">
+      <circle cx="54" cy="912" r="8" stroke="#7B859A" stroke-width="1.2" fill="none"/>
+      <circle cx="54" cy="912" r="3" fill="#FFD700"/>
+    </g>
+  </g>
+
+  <!-- explorer -->
+  <rect x="82" y="76" width="244" height="874" fill="#0A0E17"/>
+  <path d="M326 76v874" stroke="#FFFFFF" stroke-opacity=".06"/>
+  <text x="104" y="106" fill="#7D879C" font-family="Segoe UI, sans-serif" font-size="9.5" letter-spacing="1.8">EXPLORER</text>
+  <text x="304" y="106" text-anchor="end" fill="#596275" font-family="Segoe UI, sans-serif" font-size="14">···</text>
+  <g font-family="Segoe UI, sans-serif" font-size="11.5">
+    <g fill="#BAC2D2">
+      <path d="m104 128 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="120" y="135" font-weight="600">SNAPX-PRO</text>
+      <path d="m120 154 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="136" y="161">src</text>
+      <path d="m140 180 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="156" y="187">components</text>
+    </g>
+    <g fill="#8A94A8">
+      <rect x="170" y="199" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="188" y="209">Toolbar.tsx</text>
+      <rect x="170" y="222" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="188" y="232">Gallery.tsx</text>
+      <rect x="170" y="245" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="188" y="255">Editor.tsx</text>
+      <rect x="170" y="268" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="188" y="278">Settings.tsx</text>
+    </g>
+    <g fill="#7F899D">
+      <path d="m120 302 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="136" y="309">hooks</text>
+      <path d="m140 330 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="156" y="337">useCapture.ts</text>
+      <path d="m140 358 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="156" y="365">useAI.ts</text>
+      <path d="m120 388 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="136" y="395">electron</text>
+      <path d="m120 420 4 4 4-4" stroke="#7E889D" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="136" y="427">public</text>
+      <rect x="120" y="442" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="138" y="452">package.json</text>
+      <rect x="120" y="466" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="138" y="476">tsconfig.json</text>
+      <rect x="120" y="490" width="10" height="12" rx="2" stroke="#7E889D" stroke-width="1" fill="none"/>
+      <text x="138" y="500">README.md</text>
+    </g>
+  </g>
+
+  <g font-family="Segoe UI, sans-serif">
+    <text x="104" y="546" fill="#7D879C" font-size="9.5" letter-spacing="1.8">OUTLINE</text>
+    <g fill="#7D879C" font-size="10.5">
+      <path d="M104 564h8M108 560v8" stroke="#7E889D" stroke-width="1.1" stroke-linecap="round"/>
+      <text x="120" y="571">CaptureToolbar</text>
+      <text x="136" y="592">handleCapture</text>
+      <text x="136" y="613">openSettings</text>
+      <text x="136" y="634">toggleTheme</text>
+    </g>
+    <text x="104" y="680" fill="#7D879C" font-size="9.5" letter-spacing="1.8">TIMELINE</text>
+    <text x="104" y="704" fill="#596275" font-size="10">No timeline information</text>
+    <text x="104" y="720" fill="#596275" font-size="10">available for this file.</text>
+  </g>
+  <g>
+    <rect x="104" y="786" width="200" height="82" rx="13" fill="#0D1523" stroke="#FFD700" stroke-opacity=".14"/>
+    <circle cx="126" cy="810" r="11" fill="#FFD700" fill-opacity=".12"/>
+    <path d="M122 805v10M126 802v16M130 807v6" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="146" y="814" fill="#D9DEEA" font-family="Segoe UI, sans-serif" font-size="10.5" font-weight="600">SnapX AI is ready</text>
+    <text x="120" y="834" fill="#6D778C" font-family="Segoe UI, sans-serif" font-size="9.5">Scan code, explain logic,</text>
+    <text x="120" y="849" fill="#6D778C" font-family="Segoe UI, sans-serif" font-size="9.5">and detect languages.</text>
+  </g>
+
+  <!-- tabs -->
+  <rect x="326" y="76" width="902" height="46" fill="#0B0F18"/>
+  <path d="M326 122h902" stroke="#FFFFFF" stroke-opacity=".07"/>
+  <rect x="326" y="76" width="190" height="46" fill="#080B12"/>
+  <path d="M516 76v46" stroke="#FFFFFF" stroke-opacity=".06"/>
+  <path d="M326 120h190" stroke="#FFD700" stroke-width="2"/>
+  <text x="350" y="103" fill="#DCE1EB" font-family="Segoe UI, sans-serif" font-size="11.5">Toolbar.tsx</text>
+  <circle cx="492" cy="99" r="3" fill="#FFD700"/>
+  <g font-family="Segoe UI, sans-serif" font-size="11" fill="#6E788C">
+    <text x="536" y="103">useCapture.ts</text>
+    <text x="656" y="103">Editor.tsx</text>
+    <text x="750" y="103">package.json</text>
+  </g>
+  <g opacity=".6">
+    <path d="M1180 92h12M1186 86v12" stroke="#7E889D" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M1210 92h12" stroke="#7E889D" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- breadcrumbs -->
+  <text x="348" y="144" fill="#687286" font-family="Segoe UI, sans-serif" font-size="10">src</text>
+  <path d="m372 140 4 4-4 4" stroke="#4E586A" stroke-width="1" fill="none"/>
+  <text x="384" y="144" fill="#687286" font-family="Segoe UI, sans-serif" font-size="10">components</text>
+  <path d="m442 140 4 4-4 4" stroke="#4E586A" stroke-width="1" fill="none"/>
+  <text x="454" y="144" fill="#A6AFC0" font-family="Segoe UI, sans-serif" font-size="10">Toolbar.tsx</text>
+  <text x="1120" y="144" fill="#5A6478" font-family="Segoe UI, sans-serif" font-size="9">TypeScript React</text>
+  <path d="M326 156h902" stroke="#FFFFFF" stroke-opacity=".05"/>
+
+  <!-- code -->
+  <g font-family="Cascadia Code, JetBrains Mono, Consolas, monospace" font-size="13.5">
+    <g fill="#3E4759" font-size="11" text-anchor="end">
+      <text x="356" y="182">1</text><text x="356" y="204">2</text><text x="356" y="226">3</text><text x="356" y="248">4</text><text x="356" y="270">5</text><text x="356" y="292">6</text><text x="356" y="314">7</text><text x="356" y="336">8</text><text x="356" y="358">9</text><text x="356" y="380">10</text><text x="356" y="402">11</text><text x="356" y="424">12</text><text x="356" y="446">13</text><text x="356" y="468">14</text><text x="356" y="490">15</text><text x="356" y="512">16</text><text x="356" y="534">17</text><text x="356" y="556">18</text><text x="356" y="578">19</text><text x="356" y="600">20</text><text x="356" y="622">21</text><text x="356" y="644">22</text><text x="356" y="666">23</text><text x="356" y="688">24</text><text x="356" y="710">25</text><text x="356" y="732">26</text><text x="356" y="754">27</text><text x="356" y="776">28</text><text x="356" y="798">29</text><text x="356" y="820">30</text><text x="356" y="842">31</text><text x="356" y="864">32</text><text x="356" y="886">33</text><text x="356" y="908">34</text>
+    </g>
+    <rect x="370" y="435" width="818" height="24" rx="3" fill="#FFD700" fill-opacity=".055"/>
+    <path d="M370 435h2v24h-2z" fill="#FFD700" opacity=".5"/>
+
+    <g>
+      <text x="382" y="182"><tspan fill="#C586C0">import</tspan><tspan fill="#D4D4D4"> { </tspan><tspan fill="#9CDCFE">motion</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#9CDCFE">AnimatePresence</tspan><tspan fill="#D4D4D4"> } </tspan><tspan fill="#C586C0">from</tspan><tspan fill="#CE9178"> 'framer-motion'</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="382" y="204"><tspan fill="#C586C0">import</tspan><tspan fill="#D4D4D4"> { </tspan><tspan fill="#9CDCFE">useCapture</tspan><tspan fill="#D4D4D4"> } </tspan><tspan fill="#C586C0">from</tspan><tspan fill="#CE9178"> '@/hooks/useCapture'</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="382" y="226"><tspan fill="#C586C0">import</tspan><tspan fill="#D4D4D4"> { </tspan><tspan fill="#9CDCFE">GoldButton</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#9CDCFE">Glass</tspan><tspan fill="#D4D4D4"> } </tspan><tspan fill="#C586C0">from</tspan><tspan fill="#CE9178"> '@/ui'</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="382" y="248"><tspan fill="#C586C0">import</tspan><tspan fill="#D4D4D4"> { </tspan><tspan fill="#9CDCFE">toast</tspan><tspan fill="#D4D4D4"> } </tspan><tspan fill="#C586C0">from</tspan><tspan fill="#CE9178"> '@/lib/toast'</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="382" y="270" fill="#4F596C">// Capture modes shown in the floating toolbar</text>
+      <text x="382" y="292"><tspan fill="#C586C0">type</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#4EC9B0">Mode</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#CE9178">'region'</tspan><tspan fill="#D4D4D4"> | </tspan><tspan fill="#CE9178">'window'</tspan><tspan fill="#D4D4D4"> | </tspan><tspan fill="#CE9178">'full'</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="382" y="314" fill="#D4D4D4"> </text>
+      <text x="382" y="336"><tspan fill="#C586C0">interface</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#4EC9B0">Props</tspan><tspan fill="#D4D4D4"> {</tspan></text>
+      <text x="400" y="358"><tspan fill="#9CDCFE">onOpenEditor</tspan><tspan fill="#D4D4D4">: () =&gt; </tspan><tspan fill="#569CD6">void</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="400" y="380"><tspan fill="#9CDCFE">theme</tspan><tspan fill="#D4D4D4">?: </tspan><tspan fill="#4EC9B0">ThemePreset</tspan><tspan fill="#D4D4D4">;</tspan></text>
+      <text x="382" y="402"><tspan fill="#D4D4D4">}</tspan></text>
+      <text x="382" y="424" fill="#D4D4D4"> </text>
+      <text x="382" y="446"><tspan fill="#C586C0">export function</tspan><tspan fill="#DCDCAA"> CaptureToolbar</tspan><tspan fill="#D4D4D4">({ onOpenEditor, theme }: </tspan><tspan fill="#4EC9B0">Props</tspan><tspan fill="#D4D4D4">) {</tspan></text>
+      <text x="400" y="468"><tspan fill="#C586C0">const</tspan><tspan fill="#D4D4D4"> { </tspan><tspan fill="#9CDCFE">capture</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#9CDCFE">isCapturing</tspan><tspan fill="#D4D4D4"> } = </tspan><tspan fill="#DCDCAA">useCapture</tspan><tspan fill="#D4D4D4">();</tspan></text>
+      <text x="400" y="490"><tspan fill="#C586C0">const</tspan><tspan fill="#D4D4D4"> [</tspan><tspan fill="#9CDCFE">active</tspan><tspan fill="#D4D4D4">, </tspan><tspan fill="#9CDCFE">setActive</tspan><tspan fill="#D4D4D4">] = </tspan><tspan fill="#DCDCAA">useState</tspan><tspan fill="#D4D4D4">&lt;</tspan><tspan fill="#4EC9B0">Mode</tspan><tspan fill="#D4D4D4">&gt;(</tspan><tspan fill="#CE9178">'region'</tspan><tspan fill="#D4D4D4">);</tspan></text>
+      <text x="382" y="512" fill="#D4D4D4"> </text>
+      <text x="400" y="534"><tspan fill="#C586C0">const</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#DCDCAA">handleCapture</tspan><tspan fill="#D4D4D4"> = </tspan><tspan fill="#C586C0">async</tspan><tspan fill="#D4D4D4"> (mode: </tspan><tspan fill="#4EC9B0">Mode</tspan><tspan fill="#D4D4D4">) =&gt; {</tspan></text>
+      <text x="418" y="556"><tspan fill="#C586C0">await</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#DCDCAA">capture</tspan><tspan fill="#D4D4D4">({ mode, </tspan><tspan fill="#9CDCFE">copyToClipboard</tspan><tspan fill="#D4D4D4">: </tspan><tspan fill="#569CD6">true</tspan><tspan fill="#D4D4D4"> });</tspan></text>
+      <text x="418" y="578"><tspan fill="#DCDCAA">toast</tspan><tspan fill="#D4D4D4">.</tspan><tspan fill="#DCDCAA">success</tspan><tspan fill="#D4D4D4">(</tspan><tspan fill="#CE9178">'Captured in 18ms'</tspan><tspan fill="#D4D4D4">);</tspan></text>
+      <text x="400" y="600"><tspan fill="#D4D4D4">};</tspan></text>
+      <text x="382" y="622" fill="#D4D4D4"> </text>
+      <text x="400" y="644"><tspan fill="#C586C0">return</tspan><tspan fill="#D4D4D4"> (</tspan></text>
+      <text x="418" y="666"><tspan fill="#D4D4D4">&lt;</tspan><tspan fill="#4EC9B0">Glass</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#9CDCFE">className</tspan><tspan fill="#D4D4D4">=</tspan><tspan fill="#CE9178">"capture-toolbar"</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="436" y="688"><tspan fill="#D4D4D4">&lt;</tspan><tspan fill="#4EC9B0">AnimatePresence</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="454" y="710"><tspan fill="#D4D4D4">&lt;</tspan><tspan fill="#4EC9B0">motion.div</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#9CDCFE">layout</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="472" y="732"><tspan fill="#D4D4D4">&lt;</tspan><tspan fill="#4EC9B0">GoldButton</tspan><tspan fill="#D4D4D4"> </tspan><tspan fill="#9CDCFE">onClick</tspan><tspan fill="#D4D4D4">={() =&gt; </tspan><tspan fill="#DCDCAA">handleCapture</tspan><tspan fill="#D4D4D4">(active)}</tspan></text>
+      <text x="472" y="754"><tspan fill="#D4D4D4">  </tspan><tspan fill="#9CDCFE">disabled</tspan><tspan fill="#D4D4D4">={isCapturing}&gt;</tspan></text>
+      <text x="490" y="776"><tspan fill="#D4D4D4">{isCapturing ? </tspan><tspan fill="#CE9178">'Capturing…'</tspan><tspan fill="#D4D4D4"> : </tspan><tspan fill="#CE9178">'Capture now'</tspan><tspan fill="#D4D4D4">}</tspan></text>
+      <text x="472" y="798"><tspan fill="#D4D4D4">&lt;/</tspan><tspan fill="#4EC9B0">GoldButton</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="454" y="820"><tspan fill="#D4D4D4">&lt;/</tspan><tspan fill="#4EC9B0">motion.div</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="436" y="842"><tspan fill="#D4D4D4">&lt;/</tspan><tspan fill="#4EC9B0">AnimatePresence</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="418" y="864"><tspan fill="#D4D4D4">&lt;/</tspan><tspan fill="#4EC9B0">Glass</tspan><tspan fill="#D4D4D4">&gt;</tspan></text>
+      <text x="400" y="886"><tspan fill="#D4D4D4">);</tspan></text>
+      <text x="382" y="908"><tspan fill="#D4D4D4">}</tspan></text>
+    </g>
+    <rect x="626" y="425" width="1.5" height="19" fill="#FFD700">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- minimap -->
+  <g opacity=".55">
+    <rect x="1136" y="174" width="64" height="420" rx="4" fill="#0A0E17" stroke="#FFFFFF" stroke-opacity=".04"/>
+    <g fill="#55617A">
+      <rect x="1142" y="182" width="42" height="2" rx="1"/><rect x="1148" y="188" width="32" height="2" rx="1"/><rect x="1142" y="194" width="50" height="2" rx="1"/><rect x="1148" y="200" width="28" height="2" rx="1"/><rect x="1142" y="212" width="38" height="2" rx="1"/><rect x="1148" y="218" width="46" height="2" rx="1"/><rect x="1142" y="224" width="24" height="2" rx="1"/><rect x="1148" y="236" width="36" height="2" rx="1"/><rect x="1142" y="242" width="44" height="2" rx="1"/><rect x="1148" y="248" width="30" height="2" rx="1"/><rect x="1142" y="260" width="40" height="2" rx="1"/><rect x="1148" y="266" width="26" height="2" rx="1"/><rect x="1142" y="272" width="48" height="2" rx="1"/><rect x="1148" y="284" width="34" height="2" rx="1"/><rect x="1142" y="290" width="40" height="2" rx="1"/><rect x="1148" y="296" width="46" height="2" rx="1"/><rect x="1142" y="308" width="24" height="2" rx="1"/><rect x="1148" y="314" width="36" height="2" rx="1"/><rect x="1142" y="326" width="44" height="2" rx="1"/><rect x="1148" y="332" width="28" height="2" rx="1"/><rect x="1142" y="338" width="40" height="2" rx="1"/><rect x="1148" y="350" width="34" height="2" rx="1"/><rect x="1142" y="356" width="46" height="2" rx="1"/><rect x="1148" y="362" width="24" height="2" rx="1"/><rect x="1142" y="374" width="36" height="2" rx="1"/><rect x="1148" y="380" width="42" height="2" rx="1"/><rect x="1142" y="386" width="26" height="2" rx="1"/><rect x="1148" y="398" width="34" height="2" rx="1"/><rect x="1142" y="404" width="46" height="2" rx="1"/><rect x="1148" y="410" width="30" height="2" rx="1"/><rect x="1142" y="422" width="38" height="2" rx="1"/><rect x="1148" y="428" width="24" height="2" rx="1"/><rect x="1142" y="440" width="44" height="2" rx="1"/><rect x="1148" y="446" width="32" height="2" rx="1"/><rect x="1142" y="458" width="36" height="2" rx="1"/><rect x="1148" y="464" width="46" height="2" rx="1"/><rect x="1142" y="470" width="28" height="2" rx="1"/><rect x="1148" y="482" width="40" height="2" rx="1"/><rect x="1142" y="488" width="34" height="2" rx="1"/><rect x="1148" y="494" width="24" height="2" rx="1"/><rect x="1142" y="506" width="42" height="2" rx="1"/><rect x="1148" y="512" width="30" height="2" rx="1"/><rect x="1142" y="524" width="38" height="2" rx="1"/><rect x="1148" y="530" width="44" height="2" rx="1"/><rect x="1142" y="542" width="26" height="2" rx="1"/><rect x="1148" y="548" width="36" height="2" rx="1"/><rect x="1142" y="560" width="40" height="2" rx="1"/><rect x="1148" y="566" width="28" height="2" rx="1"/><rect x="1142" y="578" width="46" height="2" rx="1"/><rect x="1148" y="584" width="24" height="2" rx="1"/>
+    </g>
+    <rect x="1136" y="278" width="64" height="34" rx="3" fill="#FFD700" fill-opacity=".06" stroke="#FFD700" stroke-opacity=".15"/>
+  </g>
+
+  <!-- AI panel -->
+  <rect x="1228" y="76" width="348" height="874" fill="url(#aiPanel)"/>
+  <path d="M1228 76v874" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <path d="M1228 76h348v874h-348z" fill="url(#glow)" opacity=".6"/>
+  <g font-family="Segoe UI, sans-serif">
+    <rect x="1250" y="96" width="304" height="58" rx="14" fill="#0B111D" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <rect x="1262" y="108" width="34" height="34" rx="10" fill="url(#gold)"/>
+    <path d="m1274 118 2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5 2.5-6Z" fill="#171100"/>
+    <text x="1308" y="122" fill="#F5F7FB" font-family="Sora, Segoe UI, sans-serif" font-size="13" font-weight="600">SnapX AI</text>
+    <text x="1308" y="139" fill="#6E788C" font-size="9.5">Code intelligence · always local-first</text>
+    <circle cx="1528" cy="113" r="4" fill="#5DE3A5" filter="url(#glowSmall)"/>
+    <text x="1540" y="117" text-anchor="end" fill="#5DE3A5" font-size="8.5">READY</text>
+    <text x="1540" y="134" text-anchor="end" fill="#596275" font-size="8.5">GPT-4o mini</text>
+
+    <text x="1250" y="190" fill="#687388" font-size="9" letter-spacing="1.7">DETECTED IN VIEWPORT</text>
+    <rect x="1250" y="204" width="304" height="150" rx="15" fill="#0A101B" stroke="#FFD700" stroke-opacity=".16"/>
+    <rect x="1266" y="220" width="62" height="22" rx="6" fill="#5C82FF" fill-opacity=".1" stroke="#5C82FF" stroke-opacity=".2"/>
+    <text x="1297" y="235" text-anchor="middle" fill="#8FAEFF" font-size="9.5" font-weight="600">TypeScript</text>
+    <text x="1538" y="235" text-anchor="end" fill="#5DE3A5" font-size="9" font-weight="600">99.4% match</text>
+    <text x="1266" y="266" fill="#E9EDF5" font-size="12" font-weight="600">CaptureToolbar.tsx</text>
+    <text x="1266" y="286" fill="#747F93" font-size="9.5">React component · 1,248 tokens</text>
+    <path d="M1266 300h272" stroke="#FFFFFF" stroke-opacity=".06"/>
+    <text x="1266" y="320" fill="#737E92" font-size="9.5">This component renders the floating capture</text>
+    <text x="1266" y="336" fill="#737E92" font-size="9.5">toolbar and wires capture modes to a</text>
+    <text x="1266" y="352" fill="#737E92" font-size="9.5">clipboard-first capture hook.</text>
+
+    <text x="1250" y="388" fill="#687388" font-size="9" letter-spacing="1.7">AI INSIGHT</text>
+    <rect x="1250" y="402" width="304" height="188" rx="15" fill="#0A101B" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <path d="M1266 424h14M1273 417v14" stroke="#FFD700" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="1290" y="430" fill="#E6EAF2" font-size="10.5" font-weight="600">Clipboard-first capture</text>
+    <text x="1266" y="452" fill="#747F93" font-size="9.5">The capture result is copied before the</text>
+    <text x="1266" y="468" fill="#747F93" font-size="9.5">UI updates, so paste is available in under</text>
+    <text x="1266" y="484" fill="#747F93" font-size="9.5">20 ms even if rendering is delayed.</text>
+    <rect x="1266" y="500" width="272" height="32" rx="8" fill="#FFD700" fill-opacity=".05" stroke="#FFD700" stroke-opacity=".12"/>
+    <text x="1278" y="520" fill="#C7A942" font-family="Cascadia Code, Consolas, monospace" font-size="9">await capture({ mode, copyToClipboard })</text>
+    <g>
+      <rect x="1266" y="544" width="130" height="30" rx="8" fill="url(#gold)"/>
+      <text x="1331" y="563" text-anchor="middle" fill="#171100" font-size="10" font-weight="700">Explain code</text>
+      <rect x="1406" y="544" width="132" height="30" rx="8" fill="#FFFFFF" fill-opacity=".04" stroke="#FFFFFF" stroke-opacity=".08"/>
+      <text x="1472" y="563" text-anchor="middle" fill="#A7B0C2" font-size="10" font-weight="600">Copy snippet</text>
+    </g>
+
+    <text x="1250" y="630" fill="#687388" font-size="9" letter-spacing="1.7">SMART ACTIONS</text>
+    <g>
+      <rect x="1250" y="644" width="304" height="48" rx="12" fill="#0A101B" stroke="#FFFFFF" stroke-opacity=".06"/>
+      <circle cx="1274" cy="668" r="12" fill="#5C82FF" fill-opacity=".1"/>
+      <path d="M1269 668h10M1274 663v10" stroke="#8FAEFF" stroke-width="1.3" stroke-linecap="round"/>
+      <text x="1296" y="664" fill="#DCE1EA" font-size="10.5" font-weight="500">Refactor selection</text>
+      <text x="1296" y="679" fill="#636D81" font-size="8.5">Clean up and optimize code</text>
+      <path d="m1528 664 4 4-4 4" stroke="#5C6578" stroke-width="1.2" fill="none"/>
+      <rect x="1250" y="700" width="304" height="48" rx="12" fill="#0A101B" stroke="#FFFFFF" stroke-opacity=".06"/>
+      <circle cx="1274" cy="724" r="12" fill="#3BE3A0" fill-opacity=".09"/>
+      <path d="M1268 724h12M1274 718v12" stroke="#5DE3A5" stroke-width="1.3" stroke-linecap="round"/>
+      <text x="1296" y="720" fill="#DCE1EA" font-size="10.5" font-weight="500">Generate unit tests</text>
+      <text x="1296" y="735" fill="#636D81" font-size="8.5">Coverage for this component</text>
+      <path d="m1528 720 4 4-4 4" stroke="#5C6578" stroke-width="1.2" fill="none"/>
+      <rect x="1250" y="756" width="304" height="48" rx="12" fill="#0A101B" stroke="#FFFFFF" stroke-opacity=".06"/>
+      <circle cx="1274" cy="780" r="12" fill="#FFD700" fill-opacity=".09"/>
+      <path d="M1268 782c5-7 10-7 13 0" stroke="#FFD700" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <circle cx="1272" cy="776" r="1.5" fill="#FFD700"/>
+      <text x="1296" y="776" fill="#DCE1EA" font-size="10.5" font-weight="500">Find performance wins</text>
+      <text x="1296" y="791" fill="#636D81" font-size="8.5">Scan render and event paths</text>
+      <path d="m1528 776 4 4-4 4" stroke="#5C6578" stroke-width="1.2" fill="none"/>
+    </g>
+
+    <rect x="1250" y="832" width="304" height="88" rx="15" fill="#0D1421" stroke="#FFD700" stroke-opacity=".12"/>
+    <text x="1266" y="856" fill="#FFD700" font-size="9" letter-spacing="1.4">PRO TIP</text>
+    <text x="1266" y="878" fill="#98A2B5" font-size="9.5">Press ⌘ + Shift + 4 to pin a floating</text>
+    <text x="1266" y="894" fill="#98A2B5" font-size="9.5">capture toolbar above any app.</text>
+    <path d="M1266 906h272" stroke="#FFFFFF" stroke-opacity=".05"/>
+    <text x="1266" y="916" fill="#4E586B" font-size="8">SnapX AI never uploads code without consent.</text>
+  </g>
+
+  <!-- status bar -->
+  <rect x="24" y="950" width="1552" height="30" fill="#0B0F18"/>
+  <path d="M24 950h1552" stroke="#FFFFFF" stroke-opacity=".06"/>
+  <g font-family="Segoe UI, sans-serif" font-size="9.5">
+    <rect x="38" y="958" width="14" height="14" rx="3" fill="#1756FF" opacity=".85"/>
+    <path d="M42 965h6M45 962v6" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round"/>
+    <text x="60" y="969" fill="#A9B2C3">main*</text>
+    <circle cx="118" cy="965" r="3" fill="#FF8B9D"/>
+    <text x="126" y="969" fill="#8E98AC">0 errors</text>
+    <circle cx="184" cy="965" r="3" fill="#FFC24B"/>
+    <text x="192" y="969" fill="#8E98AC">2 warnings</text>
+    <text x="1290" y="969" fill="#8E98AC">Ln 12, Col 24</text>
+    <text x="1380" y="969" fill="#8E98AC">Spaces: 2</text>
+    <text x="1450" y="969" fill="#8E98AC">UTF-8</text>
+    <text x="1510" y="969" fill="#8E98AC">LF</text>
+    <text x="1540" y="969" fill="#8E98AC">TypeScript</text>
+  </g>
+
+  <g opacity=".5">
+    <path d="M1580 60v24M1568 72h24" stroke="#FFD700" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,127 @@
+{
+  "name": "snapx-pro",
+  "version": "1.0.0",
+  "description": "SnapX Pro — Capture everything. Miss nothing.",
+  "main": "electron/main.js",
+  "author": "SnapX Labs",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win nsis portable",
+    "dist:mac": "electron-builder --mac dmg zip",
+    "check": "node scripts/check-syntax.js",
+    "icon": "node scripts/generate-icon.js"
+  },
+  "devDependencies": {
+    "electron": "33.4.11",
+    "electron-builder": "^26.0.12",
+    "gifenc": "^1.0.3",
+    "jsqr": "^1.4.0",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.33.5"
+  },
+  "build": {
+    "appId": "com.snapxlabs.pro",
+    "productName": "SnapX Pro",
+    "copyright": "Copyright © 2026 SnapX Labs",
+    "asar": true,
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "src/**/*",
+      "package.json",
+      "!**/*.map"
+    ],
+    "extraMetadata": {
+      "name": "snapx-pro"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "SnapX Pro",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "${productName}-Setup-${version}-${arch}.${ext}"
+    },
+    "portable": {
+      "artifactName": "${productName}-Portable-${version}-${arch}.${ext}"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "build/icon.png",
+      "artifactName": "${productName}-${version}-${arch}.${ext}",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "extendInfo": {
+        "NSCameraUsageDescription": "SnapX Pro uses the camera for QR scanning.",
+        "NSMicrophoneUsageDescription": "SnapX Pro uses the microphone when you record a video with audio.",
+        "NSScreenCaptureUsageDescription": "SnapX Pro needs screen recording permission to capture screenshots and recordings."
+      }
+    },
+    "dmg": {
+      "title": "SnapX Pro ${version}",
+      "backgroundColor": "#05070d",
+      "window": {
+        "width": 540,
+        "height": 380
+      },
+      "contents": [
+        {
+          "x": 150,
+          "y": 190
+        },
+        {
+          "x": 390,
+          "y": 190,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "publish": null
+  }
+}

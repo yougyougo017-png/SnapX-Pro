@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F2E8"/>
+      <stop offset=".55" stop-color="#F0EADD"/>
+      <stop offset="1" stop-color="#E7DECF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1180 430) rotate(90) scale(540)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7D7"/>
+      <stop offset=".55" stop-color="#F6E7BA" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#F6E7BA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sphere" cx="0" cy="0" r="1" gradientTransform="translate(1128 360) rotate(47) scale(340)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8C6"/>
+      <stop offset=".24" stop-color="#FFE063"/>
+      <stop offset=".58" stop-color="#D6A323"/>
+      <stop offset=".83" stop-color="#8E5E0D"/>
+      <stop offset="1" stop-color="#4B2C06"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F8E08A"/>
+      <stop offset=".4" stop-color="#D7A72C"/>
+      <stop offset="1" stop-color="#8C5A0A"/>
+    </linearGradient>
+    <linearGradient id="goldRim" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#FFF3B0"/>
+      <stop offset=".45" stop-color="#FFD700"/>
+      <stop offset="1" stop-color="#B47B13"/>
+    </linearGradient>
+    <linearGradient id="blueVase" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3559D6"/>
+      <stop offset=".5" stop-color="#0B2C9A"/>
+      <stop offset="1" stop-color="#00185E"/>
+    </linearGradient>
+    <linearGradient id="blueHighlight" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#7D9BFF" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#7D9BFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#EFE7D8"/>
+    </linearGradient>
+    <radialGradient id="shadow" cx="0" cy="0" r="1" gradientTransform="translate(1080 760) rotate(90) scale(360 140)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B4313" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#5B4313" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="blurSmall" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence baseFrequency=".75" numOctaves="3" stitchTiles="stitch" type="fractalNoise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer>
+    </filter>
+    <pattern id="lines" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0v8" stroke="#8C6A1E" stroke-opacity=".06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#glow)"/>
+  <rect width="1600" height="1000" fill="url(#lines)"/>
+
+  <!-- top nav -->
+  <g font-family="Segoe UI, sans-serif">
+    <text x="72" y="66" fill="#16130D" font-family="Georgia, Times New Roman, serif" font-size="24" letter-spacing="4">AURELIA</text>
+    <text x="72" y="83" fill="#8A7D68" font-size="7.5" letter-spacing="4.5">OBJECTS OF DESIRE</text>
+    <g fill="#5D5549" font-size="11" letter-spacing="1.1">
+      <text x="540" y="65">COLLECTIONS</text>
+      <text x="676" y="65">ATELIER</text>
+      <text x="780" y="65">JOURNAL</text>
+      <text x="884" y="65">CONTACT</text>
+    </g>
+    <g>
+      <text x="1378" y="65" fill="#5D5549" font-size="11" letter-spacing="1.1">SEARCH</text>
+      <path d="M1449 54h20v20h-20z" stroke="#8A7D68" stroke-width="1" fill="none"/>
+      <text x="1459" y="68" text-anchor="middle" fill="#8A7D68" font-size="9">BAG</text>
+      <circle cx="1468" cy="52" r="5" fill="#B58A25"/>
+      <text x="1468" y="55" text-anchor="middle" fill="#FFF7DC" font-size="7" font-weight="700">2</text>
+    </g>
+    <path d="M72 112h1456" stroke="#2A241B" stroke-opacity=".14"/>
+  </g>
+
+  <!-- hero copy -->
+  <g font-family="Segoe UI, sans-serif">
+    <text x="72" y="184" fill="#8C7B5F" font-size="9.5" letter-spacing="3.2">EDITION 04 — THE GOLDEN HOUR</text>
+    <text x="68" y="312" fill="#14110C" font-family="Georgia, Times New Roman, serif" font-size="104" letter-spacing="-3">Objects of</text>
+    <text x="68" y="414" fill="#14110C" font-family="Georgia, Times New Roman, serif" font-size="104" letter-spacing="-3" font-style="italic">quiet desire.</text>
+    <text x="74" y="478" fill="#635B4F" font-size="14.5" line-height="1.6">Sculptural objects for the considered home. Cast by hand in</text>
+    <text x="74" y="501" fill="#635B4F" font-size="14.5">small batches, finished in liquid gold and deep sapphire.</text>
+    <g>
+      <rect x="74" y="544" width="210" height="52" rx="2" fill="#16130D"/>
+      <text x="102" y="575" fill="#F8F3E7" font-size="11" letter-spacing="1.8">EXPLORE THE ATELIER</text>
+      <path d="M252 564h18M262 556l8 8-8 8" stroke="#FFD700" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <text x="306" y="575" fill="#786D5A" font-size="10.5" letter-spacing="1">VIEW THE FILM</text>
+      <circle cx="394" cy="570" r="10" stroke="#9B8C74" stroke-width="1" fill="none"/>
+      <path d="m392 566 5 4-5 4" stroke="#9B8C74" stroke-width="1" fill="none" stroke-linecap="round"/>
+    </g>
+    <g>
+      <path d="M74 678h34" stroke="#A39174" stroke-width="1"/>
+      <text x="74" y="706" fill="#3A3329" font-size="10" letter-spacing="1.4">HAND-FINISHED</text>
+      <text x="74" y="722" fill="#8A7D68" font-size="9.5">23 karat gold leaf</text>
+      <path d="M206 678h34" stroke="#A39174" stroke-width="1"/>
+      <text x="206" y="706" fill="#3A3329" font-size="10" letter-spacing="1.4">SMALL BATCH</text>
+      <text x="206" y="722" fill="#8A7D68" font-size="9.5">Numbered editions</text>
+      <path d="M338 678h34" stroke="#A39174" stroke-width="1"/>
+      <text x="338" y="706" fill="#3A3329" font-size="10" letter-spacing="1.4">GLOBAL DELIVERY</text>
+      <text x="338" y="722" fill="#8A7D68" font-size="9.5">Insured worldwide</text>
+    </g>
+  </g>
+
+  <!-- hero sculptural arrangement -->
+  <g>
+    <ellipse cx="1088" cy="734" rx="360" ry="86" fill="url(#shadow)"/>
+    <circle cx="1110" cy="380" r="310" fill="#F7E8B6" opacity=".32" filter="url(#blur)"/>
+    <path d="M820 300c0-160 129-260 288-260s288 100 288 260v420H820V300Z" fill="#F9F3E6" stroke="#C8B996" stroke-opacity=".55"/>
+    <path d="M846 316c0-142 117-234 262-234s262 92 262 234v378H846V316Z" fill="#EFE6D3"/>
+    <path d="M846 316c0-142 117-234 262-234s262 92 262 234v378H846V316Z" fill="url(#lines)" opacity=".7"/>
+
+    <!-- pedestal -->
+    <ellipse cx="1110" cy="708" rx="238" ry="58" fill="#D8C8A8"/>
+    <path d="M872 708v46c0 32 107 58 238 58s238-26 238-58v-46" fill="#E6D9C0"/>
+    <ellipse cx="1110" cy="708" rx="238" ry="58" fill="#F0E5D0" stroke="#C6B28D" stroke-opacity=".5"/>
+    <path d="M980 750c62-18 176-18 260 0" stroke="#B7A37D" stroke-opacity=".35" fill="none"/>
+
+    <!-- large gold torus / orb -->
+    <g>
+      <circle cx="1110" cy="476" r="205" fill="url(#sphere)"/>
+      <path d="M1110 271c113 0 205 92 205 205s-92 205-205 205-205-92-205-205 92-205 205-205Z" fill="none" stroke="url(#goldRim)" stroke-width="2" opacity=".8"/>
+      <ellipse cx="1038" cy="386" rx="86" ry="54" fill="#FFFBD9" opacity=".36" filter="url(#blurSmall)" transform="rotate(-32 1038 386)"/>
+      <path d="M960 554c46 70 148 102 236 58" stroke="#5E3A06" stroke-opacity=".4" stroke-width="22" fill="none" stroke-linecap="round" filter="url(#blurSmall)"/>
+      <path d="M951 320c28-50 78-84 134-94" stroke="#FFFBDC" stroke-opacity=".55" stroke-width="7" fill="none" stroke-linecap="round" filter="url(#blurSmall)"/>
+    </g>
+
+    <!-- blue sculptural vase -->
+    <g>
+      <path d="M804 620c14-74 66-108 66-164 0-28-18-44-18-64 0-28 28-46 62-46s62 18 62 46c0 20-18 36-18 64 0 56 52 90 66 164 6 32-24 58-110 58s-116-26-110-58Z" fill="url(#blueVase)"/>
+      <path d="M842 420c12-18 34-30 72-30 30 0 52 8 66 24" stroke="url(#blueHighlight)" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <ellipse cx="914" cy="430" rx="44" ry="12" fill="#061A63" opacity=".7"/>
+      <ellipse cx="902" cy="620" rx="32" ry="68" fill="#5C7AFF" opacity=".12" filter="url(#blurSmall)"/>
+      <path d="M868 620c8 26 22 42 42 52" stroke="#7390FF" stroke-opacity=".2" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- gold ring leaning -->
+    <g>
+      <ellipse cx="1288" cy="560" rx="98" ry="154" fill="none" stroke="url(#goldRim)" stroke-width="20" transform="rotate(18 1288 560)"/>
+      <ellipse cx="1288" cy="560" rx="98" ry="154" fill="none" stroke="#5F3C06" stroke-opacity=".35" stroke-width="3" transform="rotate(18 1288 560)"/>
+      <ellipse cx="1288" cy="560" rx="98" ry="154" fill="none" stroke="#FFF0A4" stroke-opacity=".5" stroke-width="2" transform="rotate(18 1288 560)"/>
+    </g>
+
+    <!-- small plaque -->
+    <g>
+      <rect x="1018" y="744" width="184" height="36" rx="2" fill="#17140E"/>
+      <text x="1032" y="761" fill="#D9CAA6" font-family="Segoe UI, sans-serif" font-size="7.5" letter-spacing="1.6">SCULPTURE NO. 04</text>
+      <text x="1032" y="773" fill="#8C7C5F" font-family="Segoe UI, sans-serif" font-size="7" letter-spacing="1">LIQUID GOLD · SAPPHIRE</text>
+      <path d="M1180 752v20" stroke="#FFD700" stroke-opacity=".4"/>
+      <text x="1188" y="765" fill="#FFD700" font-family="Georgia, serif" font-size="9">A</text>
+    </g>
+
+    <g font-family="Segoe UI, sans-serif">
+      <circle cx="1470" cy="410" r="22" fill="#16130D"/>
+      <path d="M1470 400v20M1460 410h20" stroke="#FFD700" stroke-width="1" stroke-linecap="round"/>
+      <text x="1470" y="452" text-anchor="middle" fill="#7A6D59" font-size="7" letter-spacing="1.5">360°</text>
+    </g>
+  </g>
+
+  <!-- lower strip -->
+  <g font-family="Segoe UI, sans-serif">
+    <path d="M72 806h1456" stroke="#2A241B" stroke-opacity=".13"/>
+    <text x="72" y="840" fill="#8A7D68" font-size="8.5" letter-spacing="2.5">THE COLLECTION</text>
+    <text x="1528" y="840" text-anchor="end" fill="#8A7D68" font-size="9" letter-spacing="1">VIEW ALL 12 OBJECTS →</text>
+
+    <g>
+      <rect x="72" y="862" width="276" height="96" rx="2" fill="url(#cardBg)" stroke="#D5C7AC" stroke-opacity=".65"/>
+      <circle cx="132" cy="910" r="24" fill="url(#gold)"/>
+      <circle cx="124" cy="902" r="10" fill="#FFF3BE" opacity=".4" filter="url(#blurSmall)"/>
+      <text x="178" y="904" fill="#2B261D" font-size="10" letter-spacing="1.2">SOLAR VESSEL</text>
+      <text x="178" y="920" fill="#91846F" font-size="9">Hand-blown glass</text>
+      <text x="326" y="934" text-anchor="end" fill="#3A3328" font-family="Georgia, serif" font-size="13">$1,240</text>
+    </g>
+    <g>
+      <rect x="368" y="862" width="276" height="96" rx="2" fill="url(#cardBg)" stroke="#D5C7AC" stroke-opacity=".65"/>
+      <path d="M424 884c12 0 20 12 20 26s-8 26-20 26-20-12-20-26 8-26 20-26Z" fill="url(#blueVase)"/>
+      <path d="M414 896c6-5 14-7 22-4" stroke="#8FA7FF" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+      <text x="474" y="904" fill="#2B261D" font-size="10" letter-spacing="1.2">SAPPHIRE FORM</text>
+      <text x="474" y="920" fill="#91846F" font-size="9">Cast crystal, no. 07</text>
+      <text x="622" y="934" text-anchor="end" fill="#3A3328" font-family="Georgia, serif" font-size="13">$2,680</text>
+    </g>
+    <g>
+      <rect x="664" y="862" width="276" height="96" rx="2" fill="url(#cardBg)" stroke="#D5C7AC" stroke-opacity=".65"/>
+      <ellipse cx="730" cy="908" rx="25" ry="34" fill="none" stroke="url(#goldRim)" stroke-width="7" transform="rotate(18 730 908)"/>
+      <text x="780" y="904" fill="#2B261D" font-size="10" letter-spacing="1.2">AURELIA RING</text>
+      <text x="780" y="920" fill="#91846F" font-size="9">Sculptural object</text>
+      <text x="918" y="934" text-anchor="end" fill="#3A3328" font-family="Georgia, serif" font-size="13">$860</text>
+    </g>
+    <g>
+      <rect x="960" y="862" width="276" height="96" rx="2" fill="#16130D"/>
+      <text x="982" y="892" fill="#FFD700" font-size="8" letter-spacing="2">PRIVATE COMMISSION</text>
+      <text x="982" y="916" fill="#F8F3E7" font-family="Georgia, serif" font-size="15" font-style="italic">Made for your space.</text>
+      <text x="982" y="936" fill="#9D907A" font-size="8.5">Book a studio consultation</text>
+      <path d="M1196 910h18M1206 902l8 8-8 8" stroke="#FFD700" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    </g>
+    <g>
+      <rect x="1252" y="862" width="276" height="96" rx="2" fill="url(#cardBg)" stroke="#D5C7AC" stroke-opacity=".65"/>
+      <text x="1274" y="888" fill="#8A7D68" font-size="8" letter-spacing="1.8">ATELIER NOTES</text>
+      <text x="1274" y="912" fill="#2B261D" font-family="Georgia, serif" font-size="14">On light, weight</text>
+      <text x="1274" y="930" fill="#2B261D" font-family="Georgia, serif" font-size="14" font-style="italic">and the golden hour.</text>
+      <path d="M1274 944h40" stroke="#B58A25" stroke-width="1"/>
+      <text x="1500" y="912" text-anchor="end" fill="#B58A25" font-size="22" font-family="Georgia, serif">↗</text>
+    </g>
+  </g>
+
+  <g font-family="Segoe UI, sans-serif" fill="#6F6452" font-size="8" letter-spacing="1.4">
+    <text x="72" y="982">AURELIA ATELIER · COPENHAGEN</text>
+    <text x="800" y="982" text-anchor="middle">© 2026 AURELIA OBJECTS</text>
+    <text x="1528" y="982" text-anchor="end">INSTAGRAM · PINTEREST · JOURNAL</text>
+  </g>
+
+  <rect width="1600" height="1000" filter="url(#grain)" opacity=".55"/>
+  <path d="M0 0h1600v14H0z" fill="#16130D" opacity=".04"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="rim" x1="130" y1="80" x2="910" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3A6"/>
+      <stop offset=".34" stop-color="#FFD700"/>
+      <stop offset=".64" stop-color="#B8862B"/>
+      <stop offset="1" stop-color="#003BFF"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="280" y1="270" x2="760" y2="770" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8C7"/>
+      <stop offset=".45" stop-color="#FFD700"/>
+      <stop offset="1" stop-color="#C99700"/>
+    </linearGradient>
+    <radialGradient id="lens" cx="0" cy="0" r="1" gradientTransform="translate(530 490) rotate(56) scale(275)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#84A9FF"/>
+      <stop offset=".42" stop-color="#0B4DFF"/>
+      <stop offset="1" stop-color="#001653"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="translate(512 480) rotate(90) scale(480)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1756FF" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#1756FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="120" y="120" width="784" height="784" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="28" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="#05070D"/>
+  <rect x="36" y="36" width="952" height="952" rx="196" stroke="url(#rim)" stroke-width="24"/>
+  <rect x="78" y="78" width="868" height="868" rx="164" fill="#080C17"/>
+  <circle cx="512" cy="500" r="390" fill="url(#halo)" filter="url(#soft)"/>
+  <path d="M232 336v-58a46 46 0 0 1 46-46h58M688 232h58a46 46 0 0 1 46 46v58M792 688v58a46 46 0 0 1-46 46h-58M336 792h-58a46 46 0 0 1-46-46v-58" stroke="#FFD700" stroke-opacity=".5" stroke-width="22" stroke-linecap="round"/>
+  <g filter="url(#glow)">
+    <path d="M300 300 724 724M724 300 300 724" stroke="url(#mark)" stroke-width="92" stroke-linecap="round"/>
+  </g>
+  <circle cx="512" cy="512" r="174" fill="#080C17" stroke="url(#rim)" stroke-width="26"/>
+  <circle cx="512" cy="512" r="124" fill="url(#lens)"/>
+  <circle cx="470" cy="470" r="38" fill="white" fill-opacity=".34"/>
+  <circle cx="780" cy="246" r="17" fill="#FFD700"/>
+  <path d="M824 170v50M799 195h50" stroke="#FFD700" stroke-width="13" stroke-linecap="round" opacity=".8"/>
+  <circle cx="254" cy="780" r="8" fill="#FFD700" opacity=".55"/>
+</svg>

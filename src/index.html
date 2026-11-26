@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob: snapx:; media-src 'self' data: blob: snapx:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' data: https:; object-src 'none'; base-uri 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapX Pro — Capture Everything. Miss Nothing.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="ambient-grid"></span>
+    <span class="ambient-noise"></span>
+  </div>
+
+  <div class="app-shell" id="appShell">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand">
+          <img class="brand-logo" src="assets/app-icon.png" alt="SnapX Pro">
+          <div class="brand-text">
+            <div class="brand-name">SnapX <span class="brand-pro">PRO</span></div>
+            <div class="brand-sub">Capture everything</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="new-capture" id="newCaptureBtn" type="button">
+        <span data-icon="capture"></span>
+        <span>New capture</span>
+        <kbd data-accel="CommandOrControl+Shift+1">⌘⇧1</kbd>
+      </button>
+
+      <div class="sidebar-scroll">
+        <div id="navGroups"></div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="library-mini" id="libraryMini">
+          <div class="library-mini-head">
+            <span class="library-mini-title"><span data-icon="cloudCheck"></span> Library health</span>
+            <button type="button" data-nav="settings" data-tip="Storage settings" aria-label="Storage settings"><span data-icon="chevronRight"></span></button>
+          </div>
+          <div class="library-meter"><i id="libraryMeter" style="width:31%"></i></div>
+          <div class="library-meta"><span><b id="libraryCount">6</b> captures</span><span><b id="librarySize">6.4 MB</b> local</span></div>
+        </div>
+        <button class="user-card" type="button" data-nav="settings">
+          <span class="avatar" id="userAvatar">MC</span>
+          <span class="user-info">
+            <b id="userName">Maya Chen</b>
+            <span>Pro workspace</span>
+          </span>
+          <span data-icon="chevronDown"></span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="app-main">
+      <header class="titlebar" id="titlebar">
+        <div class="mac-traffic" id="macTraffic">
+          <button class="traffic close" data-window="close" aria-label="Close"></button>
+          <button class="traffic min" data-window="minimize" aria-label="Minimize"></button>
+          <button class="traffic max" data-window="maximize" aria-label="Maximize"></button>
+        </div>
+        <div class="breadcrumb">
+          <span data-icon="command"></span>
+          <span>SnapX</span>
+          <span class="sep">/</span>
+          <b id="breadcrumbCurrent">Dashboard</b>
+          <span class="ready-dot" title="Capture engine ready"></span>
+        </div>
+        <button class="titlebar-search" id="titlebarSearch" type="button">
+          <span data-icon="search"></span>
+          <span>Search captures, tools, settings…</span>
+          <kbd data-accel="CommandOrControl+K">⌘K</kbd>
+        </button>
+        <div class="titlebar-right">
+          <div class="sync-pill" id="syncPill"><span data-icon="cloudCheck"></span><span>Local vault</span></div>
+          <button class="titlebar-icon" type="button" data-action="toolbar" data-tip="Floating capture toolbar">
+            <span data-icon="panel"></span>
+          </button>
+          <button class="titlebar-icon" type="button" data-action="notifications" data-tip="Activity">
+            <span data-icon="bell"></span><span class="notif-dot"></span>
+          </button>
+          <div class="window-controls" id="winControls">
+            <button class="window-btn" type="button" data-window="minimize" aria-label="Minimize"><span data-icon="minus"></span></button>
+            <button class="window-btn" type="button" data-window="maximize" aria-label="Maximize"><span data-icon="maximize"></span></button>
+            <button class="window-btn close" type="button" data-window="close" aria-label="Close"><span data-icon="x"></span></button>
+          </div>
+        </div>
+      </header>
+
+      <div class="view-root" id="viewRoot"></div>
+    </main>
+  </div>
+
+  <div class="toast-root" id="toastRoot"></div>
+  <div id="modalRoot"></div>
+  <div id="paletteRoot"></div>
+  <div class="drop-overlay" id="dropOverlay">
+    <div class="drop-card">
+      <div class="drop-glow"></div>
+      <div class="drop-icon"><span data-icon="imagePlus"></span></div>
+      <b>Drop to capture</b>
+      <span>Open an image in the SnapX editor, or add it to your library.</span>
+    </div>
+  </div>
+
+  <div class="permission-banner" id="permissionBanner" hidden>
+    <span data-icon="monitor"></span>
+    <div><b>Screen Recording permission needed</b><span>SnapX needs permission to capture your screen.</span></div>
+    <button class="btn btn-sm btn-primary" data-permission-action="open">Open settings</button>
+    <button class="icon-btn sm" data-permission-action="dismiss"><span data-icon="x"></span></button>
+  </div>
+
+  <script src="vendor/jsQR.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
